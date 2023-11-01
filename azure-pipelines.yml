@@ -6,10 +6,10 @@ variables:
   releaseBranchName: 'release'
   dotnetSdkVersion: '7.x'
 
+# More info here: https://learn.microsoft.com/en-us/azure/devops/pipelines/process/scheduled-triggers?view=azure-devops&tabs=yaml
 schedules:
-  # More info here: https://learn.microsoft.com/en-us/azure/devops/pipelines/process/scheduled-triggers?view=azure-devops&tabs=yaml
 - cron: '30 12 * * *'
-  displayName: 'Deploy every day at 12:30 P.M.'
+  displayName: 'Daily midnight build'
   branches:
     include:
     - release
