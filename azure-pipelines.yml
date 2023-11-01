@@ -8,7 +8,7 @@ variables:
 
 # More info here: https://learn.microsoft.com/en-us/azure/devops/pipelines/process/scheduled-triggers?view=azure-devops&tabs=yaml
 schedules:
-- cron: '30 13 * * *'
+- cron: '0 0 * * *'
   displayName: 'Daily midnight build'
   branches:
     include:
